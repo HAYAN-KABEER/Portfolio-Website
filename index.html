@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hayan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/522f368e30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/SF_Mian_Square_Dark_logo.webp" class="logo">
+                <ul>
+                    <li><a href='# header'>Home</a></li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#services'>Services</a></li>
+                    <li><a href='#portfolio'>Portfolio</a></li>
+                    <li><a href='#contact '>Contact</a></li>
+                </ul> 
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>I'm<span> Mian Hayan Kabeer,</span><br>from Pakistan.</h1>
+            </div>  
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/hh.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Hayan Kabeer, a passionate student of BS Information Technology at Quaid-i-Azam University, Islamabad. I specialize in C++ programming and have a growing interest in software development. My technical skills extend to Database Management Systems (DBMS), HTML, and CSS, with plans to expand into web and software development</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Design Responsive Websites</li>
+                            <li><span>Software Engineering</span><br>Software Design</li>
+                            <li><span>DataBase Management System</span><br>Database Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2020</span><br>Fasttech media</li>
+                            <li><span>2022</span><br>Started Internship</li>
+                            <li><span>2023</span><br>Started SEO</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>SSC</li>
+                            <li><span>2022</span><br>HSSC</li>
+                            <li><span>2024</span><br>QAU</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>Web Development</h2>
+                    
+                    <p>Web Development refers to the process of creating websites and web applications for the internet. It involves a combination of coding, design, and database management to build interactive, responsive, and user-friendly websites that meet both aesthetic and functional requirements</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <h2>Software Engineering</h2>
+                    
+                    <p>Software Engineering is a disciplined and systematic approach to designing, developing, testing, and maintaining software applications. It involves applying engineering principles to software development to create high-quality, reliable, and efficient software solutions that meet user requirements and business needs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <h2>Database Management System</h2>
+                    
+                    <p>A Database Management System (DBMS) is software that allows users to efficiently store, retrieve, manage, and manipulate data in a structured format. It acts as an interface between the database and its users or applications, ensuring that data is organized and accessible.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Portfolio</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+                #portfolio {
+                    padding: 50px 0;
+                }
+                .work-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(249px, 1fr));
+                    grid-gap: 40px;
+                    margin-top: 49px;
+                }
+                .work {
+                    border-radius: 10px;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .work img {
+                    width: 100%;
+                    border-radius: 8px;
+                    display: block;
+                    transition: transform 0.5s;
+                }
+                .layer {
+                    width: 100%;
+                    height: 0;
+                    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+                    border-radius: 10px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 0 40px;
+                    text-align: center;
+                    font-size: 14px;
+                    transition: height 0.5s;
+                }
+                .layer h3 {
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                .layer a {
+                    margin-top: 20px;
+                    color: #ff004f;
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 60px;
+                    background: #fff;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                .work:hover img {
+                    transform: scale(1.1);
+                }
+                .work:hover .layer {
+                    height: 100%;
+                }
+                .btn {
+                    display: block;
+                    margin: 50px auto;
+                    width: fit-content;
+                    border: 1px solid #ff004f;
+                    padding: 14px 50px;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.5s;
+                }
+                .btn:hover {
+                    background: #ff004f;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>  
+                            <p>This app connects you with talented people around the world. Download it from the play store.</p> 
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Music App</h3>  
+                            <p>This app connects you with talented people around the world. Download it from the play store.</p> 
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>  
+                            <p>This app connects you with talented people around the world. Download it from the play store.</p> 
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>                                                            
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="right-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> hayankabeernwl@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 03190167467</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="" class="btn btn2">Download CV</a>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ Hayan kabeer.Made by Hayan Kabeer</p>
+            </div>
+        </div>
+        
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(event, tabname) {
+                for (var tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (var tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        
+        </body>
+        </html>
